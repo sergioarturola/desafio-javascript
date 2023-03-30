@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Crear un array vacío, luego generar 20 números al azar y guardarlos en un array.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 aleatorios</title>
+</head>
+<body>
+    <script>
+        let aleatorios = [];
+
+        for(let i = 0; i<20; i++){
+
+            let azar = Math.floor(Math.random()*99);
+            aleatorios[i] = azar;
+        }
+
+        document.write("Los 20 elementos aleatorios del array")
+        aleatorios.forEach((x) => {document.write(x + " ")});
+
+    </script>
+</body>
+</html>

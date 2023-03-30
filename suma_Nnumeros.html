@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Realizar la sumatoria de los primeros N números, donde N es ingresado por el usuario.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar de N numeros</title>
+</head>
+<body>
+    <script>
+
+        suma = 0
+        n = parseInt(prompt("Digita numero: "));
+
+
+        while(n>0){
+
+        suma += n;
+        n--;
+        }
+
+        document.write(`La suma es ${suma}`);
+
+
+
+    </script>
+    
+</body>
+</html>

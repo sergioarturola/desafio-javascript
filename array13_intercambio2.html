@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Realizar el mismo ejercicio anterior pero que en esta ocasión devuelva un arreglo nuevo con los datos cambiados.
+         arr = [1,2,3]
+         new_arr = swap(arr, 0, 1)
+         console.log(arr) // [1,2,3]
+         console.log(new_arr) // [2,1,3]
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercambio de valores</title>
+</head>
+<body>
+    <h1>Verificar consola para ver resultado</h1>
+    <script>
+        function swap(lista, posUno, posDos){
+        
+        let nueva = lista.slice();//creamos una copia para no modificar array original
+        let aux_uno = nueva.at(posUno);
+        let aux_dos = nueva.at(posDos);
+        nueva[posUno] = aux_dos;
+        nueva[posDos] = aux_uno;
+
+        return nueva;
+
+    }
+
+    arr = [1,2,3]
+    new_arr = swap(arr, 0, 1)
+    console.log(arr) 
+    console.log(new_arr)
+    </script>
+    
+</body>
+</html>

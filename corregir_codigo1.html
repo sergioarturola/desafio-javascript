@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        El siguiente código tiene un error que se produce en algunos casos especiales, descubrirlo y arreglarlo:
+        // Obtener edad
+
+        if(edad < 13) {
+ 	        console.log("Es niño");
+        }if(edad < 18 ){
+  	        console.log("Es adolecente");
+        } else{
+  	    console.log("Es adolecente");
+        }
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>El error esta en que falta else if, porque la edad en caso de ser menor a 13 las entradas validas 
+    <br>y que seran impresas seran "Es niño" y "Es adolecente" y solo queremos que imprima una.
+    </h3>
+    <script>
+        
+        const edad = 10;
+        
+        if(edad < 13) {
+ 	        console.log("Es niño");
+        }else if(edad < 18 ){
+  	        console.log("Es adolecente");
+        } else{
+  	    console.log("Es adolecente");
+        }
+    </script>
+</body>
+</html>

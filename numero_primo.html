@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Primo</title>
+</head>
+<body>
+    <script>
+        
+        let numero = parseInt(prompt("Ingresa numero: "));
+        let contador = 0;
+
+        if(numero >= 2){
+
+            for(let i = 2; i<numero; i++){
+                
+                if(numero%i == 0){ //si encuentra otros divisores entonces se rompe el bucle
+                    contador++; 
+                    break;
+                }
+            }
+
+        }
+        else{
+
+            document.write("No pueden ser primos numeros menores a 2");
+        }
+
+        //comprobando si es primo o no
+
+       switch(contador){
+        case 0:
+            document.write("Es primo")
+            break;
+        case 1:
+            document.write("NO Es primo")
+            break;
+
+       }
+
+    </script>
+    
+</body>
+</html>

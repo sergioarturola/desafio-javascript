@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear un objeto literal persona con nombre y edad y una método que determine si es mayor de edad o no.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto persona</title>
+</head>
+<body>
+    <script>
+        function mayorEdad(objeto){
+
+            console.log(objeto.edad);
+
+            if(objeto.edad >= 18){
+                document.write(`La persona ${objeto.nombre} es mayor de edad`);
+            }
+            else{
+                document.write(`La persona ${objeto.nombre} NO es mayor de edad`);
+            }
+        }
+
+
+        const persona = {
+            'nombre' : 'Sergio',
+            'edad' : 10,
+            
+        };
+
+        mayorEdad(persona);
+    </script>
+    
+</body>
+</html>

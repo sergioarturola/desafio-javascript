@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, 
+    validar que el número ingresado no contenga letras.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar digitos</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Ingresa numero"))
+        suma = 0;
+
+        if(!isNaN(numero)){
+
+            while(numero > 0){
+                resto = numero%10;
+                suma += resto;
+                numero = parseInt(numero/10);
+            }
+
+            document.write("La suma de los digitos es: "+suma);
+
+        }
+        else{
+            alert("Ingreso no valido");
+            document.write("No pudo realizar la suma");
+        }
+    </script>
+    
+</body>
+</html>

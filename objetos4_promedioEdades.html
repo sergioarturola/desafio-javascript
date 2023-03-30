@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear una función que reciba el array y devuelva la edad promedio del grupo de personas.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio edades</title>
+</head>
+<body>
+    <script>
+        function promedio(lista){
+
+            let edades = lista.map(x => {return x.edad}); //en un array guardamos todas las edades
+            let suma = edades.reduce((a, b) => a+b , 0 ); //en una variable guardamos la suma del array
+            
+            return  suma/lista.length;
+        }
+
+
+         const personas = [
+            {
+                nombre : "Sergio",
+                edad : 12
+            },
+
+            {
+                nombre : "Arturo",
+                edad : 23
+            },
+
+            {
+                nombre : "Juan",
+                edad : 25
+            },
+
+            {
+                nombre : "Luis",
+                edad : 28
+
+            }
+        ];
+        
+        const resultado = promedio(personas);
+        document.write(`El promedio de las personas es: ${resultado}`);
+    </script>
+    
+</body>
+</html>

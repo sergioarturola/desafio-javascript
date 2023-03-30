@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la intersección de ambos elementos. 
+        (Ejemplo: [1,2,3] unión [1,2,4] = [1,2]
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Verificar consola para ver resultado</h1>
+    <script>
+
+        function Union(listauno, listados){
+
+            //primero eliminamos elementos duplicados
+
+            const nuevoUno = new Set(listauno);
+            const nuevoDos = new  Set(listados);
+
+            //array que contendra los elementos en comun
+            let comun = [];
+
+            //recorremos los array para ver que elementos en comun tienen
+
+            for(let x of nuevoDos){
+                //si el otro array contiene el mismo elemento entonces se agrega al array vacio
+                if (nuevoUno.has(x)){
+                    comun.push(x);
+                }
+
+            }
+
+            return comun;
+        }
+
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [1, 2, 4];
+
+        const frutas1 = ["fresa", "melon", "manzanas", "mango", "moras"];
+        const frutas2 = ["melon", "fresa", "melon", "platano", "arandanos"];
+
+        console.log(Union(arr1, arr2));
+        console.log(Union(frutas1, frutas2));
+    </script>
+</body>
+</html>

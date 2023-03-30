@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear una función que calcule el promedio dentro de un arreglo pero dentro de un rango, esta función recibe el arreglo, 
+        un punto de partida y uno de termino y devuelve el promedio de los valores dentro del rango especificado.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Ver consola para verificar resultado</h1>
+<body>
+    <script>
+        function promedioRango(lista, start, end){
+
+            let rango = lista.slice(start, end);
+            let suma = 0;
+
+            rango.forEach(x => {
+
+                suma += x;
+            });
+
+
+            return suma/rango.length;
+        }
+
+        let numeros = [1,2,3,4,5,6,7,8,9,10];
+        let inicio = 3;
+        let final = 7;
+
+        console.log(promedioRango(numeros, inicio, final));
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Existen dos arrays, cada uno con 5 palabras, generar un nuevo array con la unión de ambos elementos
+        (Ejemplo: [1,2,3] unión [1,2,4] = [1,1,2,2,3,4]
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Union de arrays</title>
+</head>
+<body>
+
+    <h1>Verificar consola para ver resultado</h1>
+    <script>
+
+        function Interseccion(listaUno, listaDos){
+
+            inter = listaUno.concat(listaDos); //concatenamos ambas listas
+
+            //las dejamos ordenadas
+            inter.sort();
+
+            return inter;
+        }
+
+        const uno = [1,2,3];
+        const dos = [1,2,4];
+
+        const cosas = ["celular", "computadora", "biblioteca", "lapiz", "avion"];
+        const objetos = ["impresora", "bus", "reloj", "tenedor", "luz"];
+
+        console.log(Interseccion(uno, dos));
+        console.log(Interseccion(cosas, objetos));
+
+
+
+    </script>
+    
+</body>
+</html>

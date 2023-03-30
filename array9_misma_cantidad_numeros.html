@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        El usuario ingresa dos conjuntos de números separados por coma.
+         el programa debe determinar si ambos conjuntos tienen la misma cantidad de números.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misma cantidad de numeros</title>
+</head>
+<body>
+    <h1>Ver consola para verificar resultados</h1>
+    <script>
+        const primer = prompt("UNO: Ingresa valores separados por coma");
+        const segundo = prompt("DOS: Ingresa valores separados por coma");
+
+        let arr_primer = primer.split(",");
+        let arr_segundo = segundo.split(",");
+
+        if(arr_primer.length === arr_segundo.length){
+
+            document.write("Tienen la misma cantidad de numeros");
+            
+        }
+        else{
+            document.write("NO tienen la misma cantidad de numeros");
+        }
+
+        console.log(arr_primer);
+        console.log(arr_segundo);
+    </script>
+</body>
+</html>

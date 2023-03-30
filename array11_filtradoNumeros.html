@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear una función que reciba un arreglo con números y devuelva un nuevo arreglo 
+        con solo los números pares, utilizar filter()
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtando pares</title>
+    <h1>Ver consola para verificar resultado</h1>
+</head>
+<body>
+    <script>
+        function Pares(lista){
+
+            const numPares = lista.filter(x => x%2 == 0);
+
+            return numPares;
+        }
+
+        const uno = [12, 45, 33, 67, 50, 11];
+        const dos = [2, 8, 14, 17, 99];
+        const tres = [23, 8, 9, 15, 34];
+
+        console.log(Pares(uno));
+        console.log(Pares(dos));
+        console.log(Pares(tres));
+
+
+    </script>
+    
+</body>
+</html>

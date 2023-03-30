@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Crear un método que permite intercambiar las posiciones de dos elementos de un arreglo en base a sus índices ej:
+
+         arr = [1,2,3]
+        swap(arr, 0, 1)
+        console.log(arr) // [2,1,3]
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercambiar Posiciones</title>
+</head>
+<body>
+    <h1>Verificar consola para resultado</h1>
+    <script>
+        function swap(lista, posUno, posDos){
+
+            let aux_uno = arr.at(posUno);
+            let aux_dos = arr.at(posDos);
+
+            arr[posUno] = aux_dos;
+            arr[posDos] = aux_uno;
+
+        }
+
+        arr = [1, 2, 3];
+        swap(arr, 0, 1);
+        console.log(arr);
+
+    </script>
+</body>
+</html>

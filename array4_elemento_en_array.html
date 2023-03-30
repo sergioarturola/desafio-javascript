@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "café", "rosa"] determinar si un color introducido 
+    por el usuario a través de un prompt se encuentra dentro del array o no.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar elemento</title>
+</head>
+<body>
+    <script>
+        const colores = ["azul", "amarillo", "rojo", "verde", "café", "rosa"];
+        const user = prompt("Introduce un color");
+
+        if(colores.includes(user)){
+            document.write(`El color ${user} esta en la lista`);
+        }
+        else{
+            document.write(`El color ${user} NO esta en la lista`);
+        }
+    </script>
+    
+</body>
+</html>

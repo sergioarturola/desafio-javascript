@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Encontrar el número mayor en una matriz.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero mayor</title>
+</head>
+<body>
+    <script>
+        const matriz = [[2,4,6],[8,10,12], [23,5,9]];
+        let mayor = matriz[0][0]; //iniciamos mayor con el primero numero de la matriz
+
+        for(let i = 0; i<matriz.length; i++){
+            for(let j = 0; j<matriz[i].length; j++){
+
+                //vamos comparando los elementos y si encuentra un numero mas grande lo guarda
+                if(matriz[i][j] > mayor){
+                    mayor = matriz[i][j];
+                }
+            }
+        }
+        document.write("matriz =  [[2,4,6],[8,10,12], [23,5,9]]");
+        document.write("<br>");
+        document.write(`El numero mayor de la matriz es: ${mayor}`);
+    </script>
+    
+</body>
+</html>

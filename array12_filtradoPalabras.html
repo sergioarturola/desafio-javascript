@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear una función que reciba un arreglo con palabras, crear un nuevo arreglo que contenga
+        solo las palabras que empiezan con una vocal
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrando palabras</title>
+</head>
+<body>
+
+    <h1>Ver consola para verificar resultado</h1>
+    <script>
+        function Vocal(lista){
+
+            const vocales = ['a', 'e', 'i', 'o', 'u'];
+            let empiezaVocal =  lista.filter(palabra => vocales.includes(palabra.charAt(0)));
+
+            return empiezaVocal;
+        }
+
+        const p = ["avion", "verga", "panocha", "ureologico", "epa"];
+
+        console.log(Vocal(p));
+  
+    </script>
+    
+</body>
+</html>

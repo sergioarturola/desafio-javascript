@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        El usuario ingresa dos conjuntos de números separados por coma, 
+        si ambos conjuntos tienen la misma cantidad de elementos mostrar 
+        un arreglo que contenga la suma de cada elemento. (Ejemplo: [1,2,3] + [2,3,4] = [3,5,7])
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de arrays</title>
+</head>
+<body>
+    <script>
+
+        const primer = prompt("UNO: Ingresa valores separados por coma");
+        const segundo = prompt("DOS: Ingresa valores separados por coma");
+        let arr_primer = primer.split(",");
+        let arr_segundo = segundo.split(",");
+
+        if(arr_primer.length === arr_segundo.length){//si son iguales entonces realizamos la suma
+
+            //paso los array a entero con ayuda de map
+            const nuevoPrimer = arr_primer.map(x => parseInt(x));
+            const nuevoSegundo = arr_segundo.map(x => parseInt(x));
+            let suma = [];
+            //con un ciclo for realizo la suma
+            for(let i = 0; i< nuevoPrimer.length; i++){
+                suma[i] = nuevoPrimer[i] + nuevoSegundo[i];
+            }
+
+            //imprimiendo el array
+            suma.forEach(x => {document.write(x)});
+            
+        }
+        else{
+
+            document.write("NO se puede realizar la suma");
+        }
+
+    </script>
+    
+</body>
+</html>

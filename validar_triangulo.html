@@ -1,0 +1,32 @@
+<!--
+    Crear un programa donde se introduzcan los tres ángulos internos de un triángulo y se determine si el triángulo es válido o no.
+    NOTA: La suma de los 3 angulos siempre es igual a 180°
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Triangulo</title>
+</head>
+<body>
+    <script>
+
+        var a = parseInt(prompt("Digita el primer angulo del triangulo"));
+        var b = parseInt(prompt("Digita el segundo angulo del trinagulo"));
+        var c = parseInt(prompt("Digita el tercer angulo del triangulo"));
+
+        var suma = a+b+c;
+
+        if(suma == 180){
+            alert("Es un triangulo valido");
+        }
+        else{
+            alert("No es un triangulo valido");
+        }
+    </script>
+    
+</body>
+</html>

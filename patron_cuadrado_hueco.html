@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+          Dibujar los siguientes patrones ocupando document.write, para rellenar los espacios vacíos se debe imprimir un espacio vacío.
+
+        Cuadrado lleno:
+
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado Hueco</title>
+</head>
+<body>
+    <script>
+
+         let n = parseInt(prompt("Taman del cuadrado")); 
+
+        for(let i = 0; i<n; i++){
+            for(let j = 0; j<n; j++){
+
+                if((i == 0) || (i == n-1) || (j == 0) || (j == n-1)){
+
+                    document.write("*");//para dibujar los bordes
+                }
+
+                else{
+
+                    document.write("&nbsp ");//para los espacios en blanco
+                }
+                
+                
+            }
+
+            document.write("<br>");
+        }
+
+    </script>
+    
+</body>
+</html>

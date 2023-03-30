@@ -1,0 +1,38 @@
+<!--Es hacer un programa que permita capturar dos números e imprima el mayor y el menor usar una funcion y llamarla desde html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor menor</title>
+</head>
+<body>
+    <script>
+
+        function mayor(){
+
+            let a = parseInt(prompt("Digita el primer numero "));
+            let b = parseInt(prompt("Digita el segundo numero "));
+
+            if(a > b){
+                document.write("El numero "+a+" es mayor ");
+                document.write("El numero "+b+" es menor");
+            }
+
+            else if(b > a){
+                document.write("El numero "+b+" es mayor ");
+                document.write("El numero "+a+" es menor");
+            }
+            else{
+                document.write(a+" = "+b+" son iguales");
+            }
+
+        }
+
+    </script>
+
+    <button type="button" onclick="mayor()">Llamar funcion</button>
+    
+</body>
+</html>

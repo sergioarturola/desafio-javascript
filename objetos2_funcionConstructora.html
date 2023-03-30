@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear una función constructora que permita crear objetos del tipo personas pasándole solo un nombre y edad, agregar el método.
+
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion constructora</title>
+</head>
+<body>
+    <h1>Ver consola para verificar resultados</h1>
+    <script>
+        function persona (nombre, edad){
+
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+
+        const p1 = new persona("Sergio", 15);
+        const p2 = new persona("Arturo", 45);
+        const p3 = new persona("Juan", 33);
+
+        console.log(p1);
+        console.log(p2);
+        console.log(p3);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--
+    Crear un programa que determine si un string introducido por un usuario empieza con un número o con una letra.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empieza con ¿numero o letra?</title>
+</head>
+<body>
+    <script>
+        var cadena = prompt("Escribe una palabra");
+        var empieza = cadena.charAt(0);
+        
+        if(isNaN(empieza)){
+            alert("Empieza con una letra");
+        }
+        else{
+            alert("Empieza con numero");
+        }
+    </script>
+</body>
+</html>

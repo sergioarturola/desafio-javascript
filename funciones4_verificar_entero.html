@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Crear una función que reciba un número entero y muestre un error si el tipo de dato pasado es de otro tipo.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar entero</title>
+</head>
+<body>
+    <script>
+        function verifyNumber(num){
+
+            if(Number.isInteger(num)){
+                document.write(`El numero ${num} es entero `);
+            }
+            else{
+                alert("No ingresaste un numero entero");
+            }
+        }
+
+        let entrada = parseInt(prompt("Ingresa un numero"));
+        verifyNumber(entrada);
+
+    </script>
+
+    
+</body>
+</html>

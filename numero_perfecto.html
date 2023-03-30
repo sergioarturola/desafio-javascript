@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Crear un programa que determine si un número es perfecto o no, 
+        se dice que un número es perfecto si el número es igual a sus divisores, ejemplos 6 = 1 + 2 + 3
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero perfecto</title>
+</head>
+<body>
+    <script>
+
+        let numero = parseInt(prompt("Ingresa numero: "));
+        let suma = 0;
+        const numero_copia = numero;
+
+        for(let i = 1; i<numero; i++){
+
+            if(numero%i == 0){
+                console.log(i);
+                suma += i;
+            }
+        }
+        
+        if(suma == numero){
+            document.write("Es un numero perfecto");
+        }
+        else{
+            document.write("NO es un numero perfecto");
+        }
+    </script>
+    
+</body>
+</html>

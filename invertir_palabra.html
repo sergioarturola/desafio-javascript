@@ -1,0 +1,30 @@
+<!--
+    Crea un script que invierta una palabra ingresada desde el prompt, mostrar el resultado con un console.log
+    NOTA: no usar funciones propias de los string de JS usar solo bucles
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const palabra = prompt("Ingresa palabra");
+
+        //variable que contendra la palabra invertida
+        invertida = "";
+
+        for(let letra of palabra){
+            invertida = letra + invertida;
+        }
+
+        console.log(invertida);
+    </script>
+    
+</body>
+</html>

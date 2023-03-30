@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Determinar si un determinado número se encuentra dentro de una matriz o no.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar determinado numero</title>
+</head>
+<body>
+    <h1>Verificar consola para ver resultado</h1>
+    <script>
+        const matriz = [[2,4,6],[8,10,12], [23,5,9]];
+        const numero = 140;
+        let encontrado = false;
+
+        for(let i = 0; i<matriz.length; i++){
+            for(let j = 0; j<matriz[i].length; j++){
+
+                if(numero === matriz[i][j]){//si encuentra el numero entonces la variable se vuelve true y se deja de iterar
+                    encontrado = true;
+                    break;
+                }
+            }
+        }
+
+        if(encontrado){
+            console.log(`El numero ${numero} si esta en la matriz`)
+        }
+        else{
+            console.log(`No se encuentra el numero ${numero}`);
+        }
+
+        console.log(matriz);
+    </script>
+    
+</body>
+</html>

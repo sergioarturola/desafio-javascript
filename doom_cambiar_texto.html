@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Utilizando getElementById y innerHTML transformar el emoticon en un smiley
+         <p id="demo"> :( </p>
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiando elementos</title>
+</head>
+<body>
+    <div class="elementos">
+      <h1>Haz clic en la cara triste para que sonria</h1>
+      <h1 id="demo">:(</h1>
+    </div>
+
+    <script>
+        const demo = document.querySelector('#demo');
+        const padre = document.querySelector(".elementos");
+        const parrafoExtra = document.createElement('p');
+
+        demo.addEventListener('click', () =>{
+
+            demo.innerHTML = ":)";
+            parrafoExtra.innerHTML = "Ahora ya esta sonriendo";
+            padre.appendChild(parrafoExtra);
+        });
+    </script>
+    
+</body>
+</html>

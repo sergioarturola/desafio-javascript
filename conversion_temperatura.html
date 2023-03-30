@@ -1,0 +1,23 @@
+<!--
+    Crear un programa donde el usuario ingrese en un prompt la temperatura en Celcius 
+    y el programa muestre en una alerta la temperatura en Fahrenheit.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius a Fahrenheit</title>
+</head>
+<body>
+    <script>
+
+        var celcius = parseFloat(prompt("Digita la temperatura en °C"));
+        var fahrenheit = (celcius* (9/5)) + 32;
+        alert(celcius+"°C son "+fahrenheit +" °F");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+    Crear un programa que determine si un número introducido en un popup es divisible por 11 y 5 o no, 
+    mostrar el resultado con console.log (por ejemplo el 55 es comun).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisible entre 5 y 11</title>
+</head>
+<body>
+    <p>El resultado se encuentra en la consola</p>
+    <script>
+        var a = parseInt(prompt("Digita un numero"));
+
+        if((a%5==0) && (a%11==0)){
+            console.log("Es divisible entre 5 y 11");
+        }
+        else{
+            console.log("No es divisible entre 5 y 11");
+        }
+
+    </script>
+    
+</body>
+</html>

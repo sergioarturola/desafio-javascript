@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Crear una función que devuelva el promedio de un arreglo, 
+        en caso de que el arreglo esté vacío debe devolver cero.
+
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de array</title>
+</head>
+<body>
+    <h1>Ver consola para verificar resultado</h1>
+    <script>
+        function promedioArreglo(lista){
+            
+            let suma = 0;
+            let promedio = 0;
+
+            if(lista.length === 0){
+                promedio = 0;
+            }
+            else{
+                lista.forEach(x => {
+                    suma += x;
+                });
+
+                promedio = suma/lista.length;
+            }
+
+            return promedio;
+
+        }
+        const uno = [12, 45, 4, 7, 8, 23, 10];
+        const dos = [2, 4, 6];
+        const tres = []
+
+        console.log(promedioArreglo(uno));
+        console.log(promedioArreglo(dos));
+        console.log(promedioArreglo(tres));
+    </script>
+    
+</body>
+</html>

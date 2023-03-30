@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Devolver la suma de todos los elementos en la diagonal de la matriz.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma diagonal principal</title>
+</head>
+<body>
+    <script>
+        const matriz = [[1,2,3], [4,5,6],[7,8,9]];
+        let suma = 0;
+
+        for(let i = 0; i<matriz.length; i++){
+            for(let j = 0; j<matriz.length; j++){
+
+                if(i === j){
+                    suma += matriz[i][j];
+                }
+            }
+        }
+
+        document.write("Matriz = [[1,2,3], [4,5,6],[7,8,9]]")
+        document.write("<br>");
+        document.write(`La suma de la diagonal principal es: ${suma}`);
+
+    </script>
+    
+</body>
+</html>

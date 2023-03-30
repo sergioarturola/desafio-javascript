@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Realizar la suma de todos los números pares entre N y M donde N y M los ingresa un usuario.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar pares</title>
+</head>
+<body>
+    <script>
+
+        suma = 0
+        n = parseInt(prompt("Ingresa limite superior: "));
+        m = parseInt(prompt("Ingresa limite inferior: "));
+
+        while(n>=m){
+
+            if(n%2 == 0){
+
+                suma += n;
+            }
+
+            n--;
+        }
+
+        document.write(`La suma de pares es ${suma}`);
+
+
+
+    </script>
+    
+</body>
+</html>

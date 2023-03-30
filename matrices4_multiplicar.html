@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Multiplicar una matriz por un escalar, si la matriz inicial es [[1,2,3],[4,5,6]], 
+        al multiplicarla por dos deberíamos obtener [[2,4,6],[8,10,12]].
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicacion por un escalar</title>
+</head>
+<body>
+    <h1>Ver consola para verificar resultado</h1>
+    <script>
+        let matriz = [[1,2,3],[4,5,6]];
+
+        //realizando la multiplicacion
+        for(let i = 0; i<matriz.length; i++){
+            for(let j = 0; j<matriz[i].length; j++){
+                matriz[i][j] = matriz[i][j] * 2;
+            }
+        }
+
+        //imprimiendo resultado
+        for(let i = 0; i<matriz.length; i++){
+            let linea = "";
+            for(let j = 0; j<matriz[i].length; j++){
+                linea += matriz[i][j] + "\t";
+            }
+             console.log(linea);
+        }
+    </script>
+    
+</body>
+</html>

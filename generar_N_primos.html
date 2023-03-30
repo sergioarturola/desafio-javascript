@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+    Generar los primeros N números primos, donde N es ingresado por el usuario.
+    usar doble ciclo
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar numeros primos</title>
+</head>
+<body>
+    <script>
+        
+        let numero = parseInt(prompt("Ingresa numero: "));
+
+        if(numero >= 2){
+
+            for(let candidato = 2; candidato <= numero; candidato++) {//ciclo que recorre hasta N
+                let primo = true;
+                for(let divisor=2; divisor < candidato; divisor++) {//ciclo que verifica si 
+
+                    if(candidato%divisor === 0) {
+                        primo = !primo;
+                        break;
+                   }
+                }
+                if(primo) document.write(candidato+" ");
+            }
+        }
+
+        else{
+
+        document.write("No pueden ser primos numeros menores a 2"); 
+        }
+
+    </script>
+    
+</body>
+</html>
